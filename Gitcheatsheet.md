@@ -1,9 +1,9 @@
-#ProGit Chapters Summaries
+# ProGit Chapters Summaries
 
-##Chapter 2: Git Basics
+## Chapter 2: Git Basics
 
 
-###Getting a Git Repository
+### Getting a Git Repository
 
 **git init** This creates a new subdirectory named .git that contains all of your necessary repository files. At this point, nothing in your project is tracked yet.
 
@@ -14,7 +14,7 @@
 **git clone** Use it in case you want to get a copy of an existing Git repository.
 
 
-###Recording Changes to the Repository
+### Recording Changes to the Repository
 
 **git status** See the status of ypur work. New, staged, modified files. Current branch.
 
@@ -28,14 +28,14 @@
 
 
 
-###Viewing the Commit History
+### Viewing the Commit History
 
 **git log** In case you want to look back to see what has happened after you have created several commits, or if you have cloned a repository with an existing commit history.
 
 **git log -p** shows the difference (the patch output) introduced in each commit. You can also limit the number of log entries displayed, such as using -2 to show only the last two entries.
 
 
-###Undoing Things
+### Undoing Things
 
 **git commit --amend** It is if you want to redo that commit, make the additional changes you forgot, stage them, and commit again.
 
@@ -44,21 +44,21 @@
 **git checkout** Disard changes in working directory. This operation is unrecoverable.
 
 
-###Working with Remotes
+### Working with Remotes
 
 **git remote** To see which remote servers you have configured.
 
-**git fetch pb** You can use the string pb on the command line if you want to fetch all the information that everyone have but that you don’t yet have in your repository.
+**git fetch pb** You can use the string pb on the command line if you want to fetch all the information that everyone have but that you donâ€™t yet have in your repository.
 
 **git remote show <remote>** If you want to see more information about a particular remote.
 
-**git remote rename** To change a remote’s shortname.
+**git remote rename** To change a remoteâ€™s shortname.
 
-**git push** The command doesn’t transfer tags to remote servers.
+**git push** The command doesnâ€™t transfer tags to remote servers.
 
 
 
-###Tagging
+### Tagging
 
 **git tag** This command lists the tags in alphabetical order; the order in which they are displayed has no real importance.
 
@@ -68,23 +68,23 @@
 
 
 
-###Git Aliases
+### Git Aliases
 
-**git config** If you don’t want to type the entire text of each of the Git commands, you can easily set up an alias for each command using it.
+**git config** If you donâ€™t want to type the entire text of each of the Git commands, you can easily set up an alias for each command using it.
 
 
 
-##Chapter 3: Git Branching
+## Chapter 3: Git Branching
 
-###Branches in a Nutshell
+### Branches in a Nutshell
 
 **blobs** Staging the files computes a checksum for each one, stores that version of the file in the Git repository.
 
-**master** It is The default branch name in Git. As you start making commits, you’re given a master branch that points to the last commit you made.
+**master** It is The default branch name in Git. As you start making commits, youâ€™re given a master branch that points to the last commit you made.
 
 **git branch** To create a new branch.
 
-**HEAD** to know what branch you’re currently on.
+**HEAD** to know what branch youâ€™re currently on.
 
 **git log** command that shows you where the branch pointers are pointing
 
@@ -94,7 +94,7 @@
 
 
 
-###Basic Branching and Merging
+### Basic Branching and Merging
 
 **git merge** To make sure the nnew banch is what you want, and finally merge the branch back into your master branch to deploy to production.
 
@@ -102,7 +102,7 @@
 
 
 
-###Branch Management
+### Branch Management
 
 **git branch** Does more than just create and delete branches. If you run it with no arguments, you get a simple listing of your current branches.
 
@@ -110,21 +110,21 @@
 
 **git branch -v** To see the last commit on each branch.
 
-**--merged and --no-merged** They can filter this list to branches that you have or have not yet merged into the branch you’re currently on.
+**--merged and --no-merged** They can filter this list to branches that you have or have not yet merged into the branch youâ€™re currently on.
 
-**git branch --merged** To see which branches are already merged into the branch you’re on.
+**git branch --merged** To see which branches are already merged into the branch youâ€™re on.
 
-**git branch --no-merged** To see all the branches that contain work you haven’t yet merged in.
+**git branch --no-merged** To see all the branches that contain work you havenâ€™t yet merged in.
 
 
 
-###Branching Workflows
+### Branching Workflows
 
 **develop or next** They work from or use to test stability.
 
 
 
-###Remote Branches
+### Remote Branches
 
 **git ls-remote <remote>** You can get a full list of remote references explicitly for remote branches as well as more information.
 **git remote show <remote>** You can get a full list of remote references explicitly for remote branches as well as more information.
